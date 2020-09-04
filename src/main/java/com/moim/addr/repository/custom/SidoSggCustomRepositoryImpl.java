@@ -41,6 +41,7 @@ public class SidoSggCustomRepositoryImpl extends QuerydslRepositorySupport imple
 						))
 				.from(sidoSgg)
 				.distinct()
+				.orderBy(sidoSgg.sortSeq.asc())
 				.fetch();
 	}
 
