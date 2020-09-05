@@ -25,5 +25,5 @@ import com.moim.addr.repository.custom.SidoSggCustomRepository;
 // SidoSggCustomRepository를 추가한것은 Service에서 SidoSggRepository 하나로 확장하기 위함
 public interface SidoSggRepository extends JpaRepository<SidoSgg, Long>, SidoSggCustomRepository {
 
-	List<SidoSgg> findBySidoOrderBySortSeq(final String sido);
+	List<SidoSgg> findBySidoOrderBySggAsc(final String sido);
 }

@@ -49,7 +49,7 @@ public class SidoSggRepositoryTest {
 	@Test
 	public void testFindBySidoByOrderBySortSeq() {
 		// when
-		List<SidoSgg> list = sidoSggRepository.findBySidoOrderBySortSeq("서울특별시");
+		List<SidoSgg> list = sidoSggRepository.findBySidoOrderBySggAsc("서울특별시");
 		
 		// then
 		assertEquals(list.size(), 25);

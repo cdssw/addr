@@ -39,7 +39,7 @@ public class SidoSggServiceImpl implements SidoSggService {
 
 	@Override
 	public List<SggRes> getSgg(String sido) {
-		return sidoSggRepository.findBySidoOrderBySortSeq(sido).stream().map(m -> modelMapper.map(m, SggRes.class)).collect(Collectors.toList());
+		return sidoSggRepository.findBySidoOrderBySggAsc(sido).stream().map(m -> modelMapper.map(m, SggRes.class)).collect(Collectors.toList());
 	}
 	
 }

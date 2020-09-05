@@ -71,7 +71,7 @@ public class SidoSggServiceImplTest {
 	@Test
 	public void testGetSgg() {
 		// given
-		given(sidoSggRepository.findBySidoOrderBySortSeq(any())).willReturn(Arrays.asList(res2));
+		given(sidoSggRepository.findBySidoOrderBySggAsc(any())).willReturn(Arrays.asList(res2));
 		
 		// when
 		List<SidoSggDto.SggRes> list = sidoSggServiceImpl.getSgg("서울특별시");
