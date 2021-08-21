@@ -1,11 +1,12 @@
 spring:
   datasource:
-    url: ENC(qieASZB0yW1br6lwnx5mzaw5GjZ85c1cEeS/NSQ2HKyf5RcmKxVYHb+btxVRWJormnwN6YM4FrE=)
-    username: ENC(MZZvZgaFvuwT9c534pBsGg==)
-    password: ENC(7iA15feoLdOmIlMqHrJ5jDsJnQSIdqp4)
+    url: ENC(HKfVYukxjAv+Nudgb9IqTQ+88y1ZGYKOtel4gA4laNvzNu9jPWavhrrQpENio8llr8R/Bbmx+hc=)
+    username: ENC(ZDL4h8oCtE7NIJRWahR0ug==)
+    password: ENC(VrPIUMosaI3jEn/tVkhpZLvLIwMO57Of)
     driver-class-name: org.mariadb.jdbc.Driver
     data: classpath:data-h2.sql # server 기동시 자동으로 실행될 sql 구문
-    initialization-mode: always    
+    initialization-mode: always
+        
   jpa: # jpa sql 로깅
     hibernate:
       # none: 미생성, create: 항상 다시 생성, create-drop: 시작시 생성후 종료시 제거, update: 추가 테이블/컬럼 생성(삭제하진 않음), verify: 비교
